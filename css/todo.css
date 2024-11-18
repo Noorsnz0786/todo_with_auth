@@ -1,0 +1,148 @@
+/* General page layout and styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Button styling */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+/* Todo list table */
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.todo-table th, .todo-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.todo-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.todo-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.todo-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-actions .edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.todo-actions .edit-btn:hover {
+    background-color: #ec971f;
+}
+
+.todo-actions .delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.todo-actions .delete-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Status indicator */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.status.completed {
+    background-color: #4CAF50;
+}
+
+.status.pending {
+    background-color: #f0ad4e;
+}
+

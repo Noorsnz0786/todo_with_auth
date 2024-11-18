@@ -1,0 +1,135 @@
+/* General Admin Page Styles */
+body.admin {
+    padding-top: 40px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Admin Page Headings */
+body.admin h1,
+body.admin h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* User Table Styling */
+body.admin .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+body.admin .user-table th {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+/* Table Rows */
+body.admin .user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Alternating Row Colors */
+body.admin .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.admin .user-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Hover Effect on Rows */
+body.admin .user-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Buttons inside Table */
+body.admin .user-table button {
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and Active State for Buttons */
+body.admin .user-table button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+body.admin .user-table button:active {
+    background-color: #003d7a;
+    transform: scale(1);
+}
+
+/* Delete Button Special Style */
+body.admin .user-table form .delete {
+    background-color: red;
+}
+
+body.admin .user-table form .delete:hover {
+    background-color: #b30000;
+}
+
+/* Success & Error Notifications */
+body.admin .container .notification {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.admin .container .notification.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+body.admin .container .notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Subtle Table Shadow on Hover */
+body.admin .user-table:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Admin Table Container */
+body.admin .users-table {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}

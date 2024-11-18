@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding-top: 60px; /* Adjust based on nav height */
+    font-family: 'Arial', sans-serif;
+}
+
+/* New Background Animation */
+body.index {
+    background: linear-gradient(135deg, #ff6b6b, #ffca28, #4dd0e1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.container {
+    margin: 10px;
+}
+
+/* Hero Section */
+body.index .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); /* Adds a subtle dark overlay */
+}
+
+body.index .hero .hero-content {
+    max-width: 600px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+body.index .hero .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: textPopUp 1s ease;
+}
+
+@keyframes textPopUp {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+body.index .hero .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+body.index .hero .hero-content .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+body.index .hero .hero-content .hero-buttons .btn {
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #ff6b6b;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+body.index .hero .hero-content .hero-buttons .btn:hover {
+    background-color: #ff4b4b;
+    transform: scale(1.05);
+}
+
+/* Register and Login Pages */
+body.register, body.login {
+    background-color: #f0f8ff; /* Light pastel background */
+}
+
+body.register .form-container,
+body.login .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    animation: slideUp 1.2s ease;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+body.register form, 
+body.login form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+body.register form input, 
+body.login form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+body.register form input[type='submit'], 
+body.login form input[type='submit'] {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+body.register form input[type='submit']:hover, 
+body.login form input[type='submit']:hover {
+    background-color: #ff4b4b;
+    transform: scale(1.02);
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 20PX;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    margin-top: 200px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 30px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: yellow;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+nav ul li a.active {
+    background-color: #575757;
+    color: yellow;
+}
